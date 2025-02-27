@@ -1,0 +1,29 @@
+<html>
+<head> 
+<title> UNDER CONSTRUCTION </title> 
+<link href="under-construction.ico" rel="icon" type="image/x-icon">
+ <h1> UNDER CONSTRUCTION </h1>
+<style> body{ margin: 0; padding: 0;</style>
+</head>
+<body> <h3> We are sorry but this site is currently <b> UNDER CONSTRUCTION </b> </h3> </body>
+<input type="text" id="searchInput" placeholder="Admin Login">
+
+<script>
+    // Define the keywords and the corresponding redirect URLs
+    const redirectMapping = {
+        "pig": "https://shellshock999.vercel.app/page-plan.html",
+    };
+
+    // Get the input element
+    const inputElement = document.getElementById("searchInput");
+
+    // Add event listener to input element
+    inputElement.addEventListener("input", function() {
+        const inputValue = inputElement.value.toLowerCase();
+
+        // Check if the input value matches any of the keywords
+        if (redirectMapping[inputValue]) {
+            window.location.href = redirectMapping[inputValue]; // Redirect the user
+        }
+    });
+</script>
