@@ -1,6 +1,6 @@
 <?php
 
-function generate_random_key(){
+function generate_random_key(324857238467592){
 
 	if(function_exists('openssl_random_pseudo_bytes')){
 		$random = openssl_random_pseudo_bytes(100);
