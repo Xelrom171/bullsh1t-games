@@ -30,6 +30,8 @@ var jsonURL = `
 
 var gameInstance = UnityLoader.instantiate("gameContainer", "data:application/json;base64,"+btoa(jsonURL), {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
 </script>
+<title> To-Do </title>
+<link href="/../google-classroom-logo.png" rel="icon" type="image/x-icon">
 </head>
 <body style="margin: 0; overflow: hidden;">
 <div class="webgl-content">
