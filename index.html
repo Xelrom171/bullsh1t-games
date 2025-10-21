@@ -12,7 +12,6 @@
 <input type="text" id="searchInput" placeholder="Admin Login">
 
 <script>
-    // Define the keywords and the corresponding redirect URLs
     const redirectMapping = {
         "egg": "page-plan.html",
         "slope": "xml-admin.html",
@@ -37,17 +36,11 @@
          "spo": "SPO/index.html",
          "v86": "v86/index.html",
          "1v1": "1v1lol/index.html",
-        "hardware": "hardware_tycoon",
+        "hardware": "hardware_tycoon/index.html",
     };
-
-    // Get the input element
     const inputElement = document.getElementById("searchInput");
-
-    // Add event listener to input element
     inputElement.addEventListener("input", function() {
         const inputValue = inputElement.value.toLowerCase();
-
-        // Check if the input value matches any of the keywords
         if (redirectMapping[inputValue]) {
             window.location.href = redirectMapping[inputValue]; // Redirect the user
         }
@@ -55,3 +48,4 @@
 </script>
  <p> PROPOSAL POST 1.52: Add x-frame-options sameorigin so users cannot access admin.php developer console through iframe glitch. - Ronald Walberough I.T. </p>
 </html>
+
